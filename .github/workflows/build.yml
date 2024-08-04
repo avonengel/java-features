@@ -23,8 +23,6 @@ jobs:
       - uses: gradle/actions/wrapper-validation@v3
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3.5.0
-        with:
-          cache-write-only: true
       - name: Run build (incl. test)
         run: ./gradlew build --no-daemon
 
